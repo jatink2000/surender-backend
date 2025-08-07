@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            background: #f1f1f1;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            width: 350px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .forgot-link {
+            text-align: right;
+            margin-bottom: 16px;
+        }
+
+        .forgot-link a {
+            font-size: 13px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .forgot-link a:hover {
+            text-decoration: underline;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #218838;
+        }
+
+        .login-container .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .login-container .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .login-container .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+        <input type="email" name="email" placeholder="Enter email" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+
+        <div class="forgot-link">
+            <a href="/forgot">Forgot Password?</a>
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+    <div class="footer">
+        Don't have an account? <a href="/signup">Sign Up</a>
+    </div>
+</div>
+
+</body>
+</html>

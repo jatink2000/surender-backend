@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body {
+            background: #f1f1f1;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+        }
+
+        .content {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 600px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .buttons a, .buttons form button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .logout-btn {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .logout-btn:hover {
+            background-color: #218838;
+        }
+
+        .delete-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .delete-btn:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to Your Home Page</h1>
+    </div>
+
+    <div class="content">
+        <h2>Hello, User!</h2>
+        <p>You have successfully logged in.</p>
+
+        <div class="buttons">
+            <a href="/" class="logout-btn">Logout</a>
+
+            <!-- Delete Account Form -->
+            <form action="/delete-account" method="POST" style="display: inline;">
+                <button type="submit" class="delete-btn">
+                     <a href="/delete" class="delete-btn">Delete My Account</a>
+                </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+ 
